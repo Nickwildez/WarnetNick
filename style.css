@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    text-transform: capitalize;
+    text-decoration: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #060024;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-image: url(image/bg-warnet.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+.home-page-1{
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    border: none;
+    background: transparent;
+    &.home-page-1 .container-page-1{
+        background: transparent;
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: none;
+        &.container-page-1 .box-text-page1{
+            background: transparent;
+            width: 100%;
+            gap: 10px;
+            position: relative;
+            &.box-text-page1 .h2-page-1{
+                display: grid;
+                justify-content: left;
+                align-items: center;
+                text-align: left;
+                border: none;
+                width: 100%;
+                padding: 10px;
+                background: transparent;
+                &.h2-page-1 h2{
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    text-align: left;
+                    position: relative;
+                    border: none;
+                    padding: 10px;
+                    color: white;
+                    font-size: 1.5rem;
+                    border-radius: 10px;
+                    background: #8a2be2;
+                }
+            }
+        }
+    }
+    .container-page-1 .p-page-1{
+        display: grid;
+        justify-content: left;
+        align-items: center;
+        text-align: left;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 100%;
+        padding: 10px;
+        &.p-page-1 p{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            position: relative;
+            width: 100%;
+            color: white;
+            padding: 15px 10px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: none;
+            background: #1d0933b9;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px 4px #580092;
+        }
+    }
+
+    .container-page-1 .bt-to-server-warnet{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        background: transparent;
+        &.bt-to-server-warnet #btWarnet-page-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+            cursor: pointer;
+            position: relative;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            background: #28004d;
+            box-shadow: 0 2px 4px 1px #cc00ff;
+        }
+    }
+}
