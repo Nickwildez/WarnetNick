@@ -62,6 +62,7 @@ body {
                 border: none;
                 width: 100%;
                 padding: 10px;
+                animation: slideDown 1s forwards;
                 background: transparent;
                 &.h2-page-1 h2{
                     display: flex;
@@ -69,6 +70,7 @@ body {
                     align-items: center;
                     text-align: left;
                     position: relative;
+                    width: 100%;
                     border: none;
                     padding: 10px;
                     color: white;
@@ -88,6 +90,7 @@ body {
         border: none;
         background: transparent;
         width: 100%;
+        animation: slideUp 1s forwards;
         padding: 10px;
         &.p-page-1 p{
             display: flex;
@@ -126,11 +129,40 @@ body {
             cursor: pointer;
             position: relative;
             color: white;
+            animation: slideUp 1s forwards;
             border: none;
             padding: 10px;
             border-radius: 10px;
             background: #28004d;
             box-shadow: 0 2px 4px 1px #cc00ff;
+            transition: .5s ease;
+            &#btWarnet-page-1:active{
+                background: #cc00ff;
+            }
         }
+    }
+}
+
+@keyframes slideDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
