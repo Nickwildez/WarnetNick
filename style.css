@@ -23,7 +23,6 @@ body::-webkit-scrollbar {
 body {
     background: #060024;
     box-sizing: border-box;
-    width: 100%;
 }
 
 .home-page-1{
@@ -131,7 +130,7 @@ body {
             padding: 10px;
             border-radius: 10px;
             background: #28004d;
-            box-shadow: 0 2px 4px 1px #cc00ff;
+            box-shadow: 0 1px 4px 1px #cc00ff;
             transition: .5s ease;
             &#btWarnet-page-1:active{
                 background: #cc00ff;
